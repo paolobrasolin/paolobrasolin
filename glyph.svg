@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 12">
+  <style>
+    /* NOTE: 46 = 6+6+6+4+4+2+2+8+2+2+4 */
+    path {
+      fill: none;
+      stroke: black;
+      stroke-width: 1;
+      stroke-linejoin: bevel;
+      stroke-linecap: butt; /* heh */
+      stroke-dasharray: 46;
+    }
+    path#core {
+      stroke-width: 0.25;
+    }
+    path#soul {
+      stroke-width: 0.5;
+      stroke-dasharray: 0.5;
+    }
+    path#soul, path#head, path#tail {
+      animation: 10s linear infinite forwards;
+    }
+    path#soul { animation-name: soul; }
+    path#head { animation-name: head; }
+    path#tail { animation-name: tail; }
+    @keyframes soul {
+        0% { stroke: hsl(  0,100%,50%); stroke-dashoffset:   0; }
+       10% { stroke: hsl( 30,100%,50%); }
+       20% { stroke: hsl( 60,100%,50%); }
+       30% { stroke: hsl(120,100%,50%); }
+       40% { stroke: hsl(180,100%,50%); }
+       50% { stroke: hsl(240,100%,50%); }
+       60% { stroke: hsl(270,100%,50%); }
+       70% { stroke: hsl(300,100%,50%); stroke-dashoffset: 46; }
+    }
+    @keyframes head {
+        0.0% { stroke-dashoffset: -0; }
+       70.0% { stroke-dashoffset: -48; }
+       75.0% { stroke-width: 1.0; }
+       96.5% { stroke-width: 1.0; }
+       97.5% { stroke-width: 0.9; }
+       98.0% { stroke-width: 0.8; }
+       99.5% { stroke-width: 0.8; }
+      100.0% { stroke-width: 1.0; stroke-dashoffset: -48; }
+    }
+    @keyframes tail {
+        0.0% { stroke-dashoffset: 48; }
+       70.0% { stroke-dashoffset: 0; }
+       75.0% { stroke-width: 1.0; }
+       96.5% { stroke-width: 1.0; }
+       97.5% { stroke-width: 0.9; }
+       98.0% { stroke-width: 0.8; }
+       99.5% { stroke-width: 0.8; }
+      100.0% { stroke-width: 1.0; stroke-dashoffset: 0; }
+    }
+  </style>
+  <path id="core" d="M1 7h6v-6h-6v4h4v-2h-2v8h-2v-2h4"/>
+  <path id="soul" d="M1 7h6v-6h-6v4h4v-2h-2v8h-2v-2h4"/>
+  <path id="head" d="M1 7h6v-6h-6v4h4v-2h-2v8h-2v-2h4"/>
+  <path id="tail" d="M1 7h6v-6h-6v4h4v-2h-2v8h-2v-2h4"/>
+</svg>
