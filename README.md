@@ -8,13 +8,13 @@ I deeply care about _making things possible_ by writing tools that empower peopl
 
 That's the motivation behind most of my projects:
 
-- [**CoDi**][commutative-diagrams-url] is a [saner](standards-url) [LaTeX][latex-url] package to draw commutative diagrams.
-- [**`fletcher`**](https://github.com/paolobrasolin/fletcher)<sup>WIP</sup> is a universal transpiler among all [LaTeX][latex-url] packages to draw commutative diagrams.
-- [**многоꙮтех**](https://github.com/paolobrasolin/mnogootex) is a CLI tool to contrast [PoP][pop-url] and parallelize typesetting a [LaTeX][latex-url] document for different publications.
-- [**`krater`**](https://github.com/paolobrasolin/krater) is a [GitHub repo template][gh-repo-template-url] for setting up math-rich websites in minutes.
-- [**`jekyll-antex`**](https://github.com/paolobrasolin/jekyll-antex) is a [Jekyll][jekyll-url] plugin to embed arbitrary [LaTeX][latex-url].
-- [**`jekyll-agda`**](https://github.com/paolobrasolin/jekyll-agda) is a [Jekyll][jekyll-url] plugin to use literate [Agda][agda-url].
-- [**`jekyll-sheafy`**](https://github.com/paolobrasolin/jekyll-sheafy)<sup>WIP</sup> is a [Jekyll][jekyll-url] plugin to build websites like [Stacks][stacks-url] and [Kerodon][kerodon-url] without infrastructure.
+- [**CoDi**][commutative-diagrams-url] is a [saner][standards-url] [LaTeX][latex-url] package to draw commutative diagrams.
+- [**`fletcher`**][fletcher-url]<sup>WIP</sup> is a universal transpiler among all [LaTeX][latex-url] packages to draw commutative diagrams.
+- [**многоꙮтех**][mnogootex-url] is a CLI tool to contrast [PoP][pop-url] and parallelize typesetting a [LaTeX][latex-url] document for different publications.
+- [**`krater`**][krater-url] is a [GitHub repo template][gh-repo-template-url] for setting up math-rich websites in minutes.
+- [**`jekyll-antex`**][jekyll-antex-url] is a [Jekyll][jekyll-url] plugin to embed arbitrary [LaTeX][latex-url].
+- [**`jekyll-agda`**][jekyll-agda-url] is a [Jekyll][jekyll-url] plugin to use literate [Agda][agda-url].
+- [**`jekyll-sheafy`**][jekyll-sheafy-url]<sup>WIP</sup> is a [Jekyll][jekyll-url] plugin to build websites like [Stacks][stacks-url] and [Kerodon][kerodon-url] without infrastructure.
 
 [commutative-diagrams-url]: https://github.com/paolobrasolin/commutative-diagrams
 [mnogootex-url]: https://github.com/paolobrasolin/mnogootex
