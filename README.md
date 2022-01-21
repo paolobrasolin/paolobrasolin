@@ -31,3 +31,7 @@ That's the motivation behind most of my projects:
 [agda-url]: https://wiki.portal.chalmers.se/agda/pmwiki.php
 [stacks-url]: https://stacks.math.columbia.edu/
 [kerodon-url]: https://kerodon.net/
+
+Please do [get in touch][linktree-url]!
+
+[linktree-url]: https://linktr.ee/paolo.brasolin
