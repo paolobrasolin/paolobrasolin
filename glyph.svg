@@ -9,6 +9,9 @@
       stroke-linecap: butt; /* heh */
       stroke-dasharray: 46;
     }
+    path#glow {
+      stroke: white;
+    }
     path#core {
       stroke-width: 0.25;
     }
@@ -53,6 +56,12 @@
       100.0% { stroke-width: 1.0; stroke-dashoffset: 0; }
     }
   </style>
+  <defs>
+    <filter id="glow-filter">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="0.1" />
+    </filter>
+  </defs>
+  <path id="glow" d="M1 7h6v-6h-6v4h4v-2h-2v8h-2v-2h4" filter="url(#glow-filter)"/>
   <path id="core" d="M1 7h6v-6h-6v4h4v-2h-2v8h-2v-2h4"/>
   <path id="soul" d="M1 7h6v-6h-6v4h4v-2h-2v8h-2v-2h4"/>
   <path id="head" d="M1 7h6v-6h-6v4h4v-2h-2v8h-2v-2h4"/>
