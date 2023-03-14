@@ -22,6 +22,28 @@
     path#soul, path#head, path#tail {
       animation: 10s linear infinite forwards;
     }
+    path#chainVLink {
+      stroke-width: 0.2;
+      stroke-dasharray: 0 0.3 0.7 0;
+      stroke-linecap: round;
+      animation: 10s linear infinite forwards;
+    }
+    path#chainHRing {
+      stroke-width: 0.6;
+      stroke-dasharray: 0.3 0.7;
+      stroke-linecap: round;
+      animation: 10s linear infinite forwards;
+    }
+    path#chainHHole {
+      stroke: white;
+      stroke-width: 0.3;
+      stroke-dasharray: 0.3 0.7;
+      stroke-linecap: round;
+      animation: 10s linear infinite forwards;
+    }
+    path#chainVLink { animation-name: pull, rain; }
+    path#chainHRing { animation-name: pull, rain; }
+    path#chainHHole { animation-name: pull; }
     path#soul { animation-name: rain, pull; }
     path#head { animation-name: head; }
     path#tail { animation-name: tail; }
@@ -37,7 +59,7 @@
     }
     @keyframes pull {
         0% { stroke-dashoffset:  0; }
-       70% { stroke-dashoffset: 46; }
+       70% { stroke-dashoffset: 23; }
     }
     @keyframes head {
         0.0% { stroke-dashoffset: -0; }
@@ -66,8 +88,11 @@
     </filter>
   </defs>
   <path id="glow" d="M1 7h6v-6h-6v4h4v-2h-2v8h-2v-2h4" filter="url(#glow-filter)"/>
-  <path id="core" d="M1 7h6v-6h-6v4h4v-2h-2v8h-2v-2h4"/>
-  <path id="soul" d="M1 7h6v-6h-6v4h4v-2h-2v8h-2v-2h4"/>
+  <!-- <path id="core" d="M1 7h6v-6h-6v4h4v-2h-2v8h-2v-2h4"/> -->
+  <!-- <path id="soul" d="M1 7h6v-6h-6v4h4v-2h-2v8h-2v-2h4"/> -->
+  <path id="chainHRing" d="M1.3 7h5.7v-6h-6v4h4v-2h-2v8h-2v-2h3.7"/>
+  <path id="chainHHole" d="M1.3 7h5.7v-6h-6v4h4v-2h-2v8h-2v-2h3.7"/>
+  <path id="chainVLink" d="M1.3 7h5.7v-6h-6v4h4v-2h-2v8h-2v-2h3.7"/>
   <path id="head" d="M1 7h6v-6h-6v4h4v-2h-2v8h-2v-2h4"/>
   <path id="tail" d="M1 7h6v-6h-6v4h4v-2h-2v8h-2v-2h4"/>
 </svg>
