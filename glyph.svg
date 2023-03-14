@@ -22,18 +22,22 @@
     path#soul, path#head, path#tail {
       animation: 10s linear infinite forwards;
     }
-    path#soul { animation-name: soul; }
+    path#soul { animation-name: rain, pull; }
     path#head { animation-name: head; }
     path#tail { animation-name: tail; }
-    @keyframes soul {
-        0% { stroke: hsl(  0,100%,50%); stroke-dashoffset:   0; }
+    @keyframes rain {
+        0% { stroke: hsl(  0,100%,50%); }
        10% { stroke: hsl( 30,100%,50%); }
        20% { stroke: hsl( 60,100%,50%); }
        30% { stroke: hsl(120,100%,50%); }
        40% { stroke: hsl(180,100%,50%); }
        50% { stroke: hsl(240,100%,50%); }
        60% { stroke: hsl(270,100%,50%); }
-       70% { stroke: hsl(300,100%,50%); stroke-dashoffset: 46; }
+       70% { stroke: hsl(300,100%,50%); }
+    }
+    @keyframes pull {
+        0% { stroke-dashoffset:  0; }
+       70% { stroke-dashoffset: 46; }
     }
     @keyframes head {
         0.0% { stroke-dashoffset: -0; }
